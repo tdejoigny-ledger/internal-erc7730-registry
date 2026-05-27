@@ -3,7 +3,7 @@ name: 🤖 format descriptors
 
 on:
   schedule:
-    - cron: "0 7 * * *"
+    - cron: '0 7 * * *'
   workflow_dispatch:
 
 permissions:
@@ -19,9 +19,10 @@ env:
 jobs:
   format:
     name: format descriptors
-    runs-on: unbuntu-latest
+    runs-on: public-ledgerhq-shared-small
     timeout-minutes: 60
     steps:
+
       - name: Checkout
         timeout-minutes: 10
         uses: actions/checkout@v6.0.2
@@ -34,12 +35,20 @@ jobs:
         timeout-minutes: 10
         uses: actions/setup-python@v6
         with:
-          python-version: "3.12"
-          cache: "pip"
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Login to Ledger JFrog
+        timeout-minutes: 10
+        uses: LedgerHQ/actions-security/actions/jfrog-login@actions/jfrog-login-1
+
+      - name: Setup pip
+        timeout-minutes: 10
+        run: jf pipc --global --repo-resolve=virtual-pypi-prod-green
 
       - name: Install ERC-7730 library
         timeout-minutes: 10
-        run: pip install erc7730
+        run: jf pip install erc7730
 
       - name: Format ERC-7730 descriptors
         timeout-minutes: 10
@@ -62,8 +71,8 @@ jobs:
           branch: ${{ env.BRANCH }}-format-descriptors
           base: ${{ env.BRANCH }}
           delete-branch: false
-          commit-message: "chore: format descriptors - ${{ env.CURRENT_DATE }}"
-          title: "chore: format descriptors - ${{ env.CURRENT_DATE }}"
+          commit-message: 'chore: format descriptors - ${{ env.CURRENT_DATE }}'
+          title: 'chore: format descriptors - ${{ env.CURRENT_DATE }}'
           body: ${{ steps.submodules.outputs.prBody }}
           draft: false
           signoff: false

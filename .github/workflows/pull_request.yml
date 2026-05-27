@@ -3,7 +3,7 @@ name: ✨ pull request
 on:
   pull_request:
     paths-ignore:
-      - "developer-preview/**"
+      - 'developer-preview/**'
 
 permissions:
   contents: read
@@ -12,16 +12,16 @@ concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
   cancel-in-progress: true
 
-#env:
-#  ETHERSCAN_API_HOST: <set this secret to define a custom Etherscan API host>
-#  ETHERSCAN_API_KEY: <set this secret to inject Etherscan API key>
+env:
+  ETHERSCAN_API_HOST: proxyetherscan-ci.api.live.ledger.com
 
 jobs:
   validate_descriptors:
     name: 🔎 validate descriptors
-    runs-on: ubuntu-latest
+    runs-on: public-ledgerhq-shared-small
     timeout-minutes: 60
     steps:
+
       - name: Checkout
         timeout-minutes: 10
         uses: actions/checkout@v6.0.2
@@ -41,8 +41,8 @@ jobs:
         if: steps.changed-descriptor-files.outputs.any_changed == 'true'
         uses: actions/setup-python@v6
         with:
-          python-version: "3.12"
-          cache: "pip"
+          python-version: '3.12'
+          cache: 'pip'
 
       - name: Install ERC-7730 library
         timeout-minutes: 10
