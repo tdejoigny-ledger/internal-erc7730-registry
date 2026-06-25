@@ -1,0 +1,16 @@
+{
+  "$schema": "../../specs/erc7730-v2.schema.json",
+  "includes": "common-KilnVaults.json",
+  "context": {
+    "$id": "kiln-vault-mockusdc-arc-mainnet",
+    "contract": { "deployments": [{ "chainId": 5042, "address": "0x8321b8E2362979CD8c847a645266b5fa0EB732Eb" }] }
+  },
+  "metadata": {
+    "contractName": "Kiln Vault (Mock USDC)",
+    "constants": {
+      "underlyingToken": "0x3600000000000000000000000000000000000000",
+      "underlyingTicker": "USDC",
+      "vaultTicker": "amockUSDC"
+    }
+  }
+}
