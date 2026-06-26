@@ -4,7 +4,7 @@
   "metadata": {
     "owner": "Gauntlet",
     "info": { "url": "https://www.gauntlet.xyz/" },
-    "constants": { "underlyingToken": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913", "underlyingTicker": "USDC", "vaultTicker": "gtUSDCp" }
+    "constants": { "underlyingToken": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85", "underlyingTicker": "USDC", "vaultTicker": "gtusdcp" }
   },
-  "context": { "contract": { "deployments": [{ "chainId": 8453, "address": "0xeE8F4eC5672F09119b96Ab6fB59C27E1b7e44b61" }] } }
+  "context": { "contract": { "deployments": [{ "chainId": 10, "address": "0xC30ce6A5758786e0F640cC5f881Dd96e9a1C5C59" }] } }
 }
