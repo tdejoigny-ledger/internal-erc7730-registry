@@ -8,9 +8,11 @@
         { "chainId": 10, "address": "0x1111111254EEB25477B68fb85Ed929f73A960582" },
         { "chainId": 56, "address": "0x1111111254EEB25477B68fb85Ed929f73A960582" },
         { "chainId": 137, "address": "0x1111111254EEB25477B68fb85Ed929f73A960582" },
+        { "chainId": 250, "address": "0x1111111254EEB25477B68fb85Ed929f73A960582" },
         { "chainId": 8453, "address": "0x1111111254EEB25477B68fb85Ed929f73A960582" },
         { "chainId": 42161, "address": "0x1111111254EEB25477B68fb85Ed929f73A960582" },
-        { "chainId": 59144, "address": "0x1111111254EEB25477B68fb85Ed929f73A960582" }
+        { "chainId": 59144, "address": "0x1111111254EEB25477B68fb85Ed929f73A960582" },
+        { "chainId": 324, "address": "0x6e2B76966cbD9cF4cC2Fa0D76d24d5241E0ABC2F" }
       ]
     }
   },
@@ -194,6 +196,70 @@
           { "label": "R", "path": "r", "visible": "never" },
           { "label": "Vs", "path": "vs", "visible": "never" },
           { "label": "Permit", "path": "permit", "visible": "never" }
+        ]
+      },
+      "fillOrderRFQ((uint256 info, address makerAsset, address takerAsset, address maker, address allowedSender, uint256 makingAmount, uint256 takingAmount) order, bytes signature, uint256 flagsAndAmount)": {
+        "$id": "fillOrderRFQ",
+        "intent": "Fill RFQ order",
+        "fields": [
+          {
+            "path": "order.makingAmount",
+            "label": "Order making amount",
+            "format": "tokenAmount",
+            "params": {
+              "tokenPath": "order.makerAsset",
+              "nativeCurrencyAddress": ["$.metadata.constants.addressAsEth", "$.metadata.constants.addressAsNull"]
+            },
+            "visible": "always"
+          },
+          {
+            "path": "order.takingAmount",
+            "label": "Order taking amount",
+            "format": "tokenAmount",
+            "params": {
+              "tokenPath": "order.takerAsset",
+              "nativeCurrencyAddress": ["$.metadata.constants.addressAsEth", "$.metadata.constants.addressAsNull"]
+            },
+            "visible": "always"
+          },
+          { "label": "Fill amount", "path": "flagsAndAmount", "visible": "never" },
+          { "label": "Signature", "path": "signature", "visible": "never" },
+          { "label": "Order Info", "path": "order.info", "visible": "never" },
+          { "label": "Order Maker", "path": "order.maker", "visible": "never" },
+          { "label": "Order Allowed Sender", "path": "order.allowedSender", "visible": "never" }
+        ]
+      },
+      "fillOrderRFQToWithPermit((uint256 info, address makerAsset, address takerAsset, address maker, address allowedSender, uint256 makingAmount, uint256 takingAmount) order, bytes signature, uint256 flagsAndAmount, address target, bytes permit)": {
+        "$id": "fillOrderRFQToWithPermit",
+        "intent": "Fill RFQ order",
+        "fields": [
+          {
+            "path": "order.makingAmount",
+            "label": "Order making amount",
+            "format": "tokenAmount",
+            "params": {
+              "tokenPath": "order.makerAsset",
+              "nativeCurrencyAddress": ["$.metadata.constants.addressAsEth", "$.metadata.constants.addressAsNull"]
+            },
+            "visible": "always"
+          },
+          {
+            "path": "order.takingAmount",
+            "label": "Order taking amount",
+            "format": "tokenAmount",
+            "params": {
+              "tokenPath": "order.takerAsset",
+              "nativeCurrencyAddress": ["$.metadata.constants.addressAsEth", "$.metadata.constants.addressAsNull"]
+            },
+            "visible": "always"
+          },
+          { "label": "Fill amount", "path": "flagsAndAmount", "visible": "never" },
+          { "path": "target", "$ref": "$.display.definitions.beneficiary", "visible": "always" },
+          { "label": "Signature", "path": "signature", "visible": "never" },
+          { "label": "Permit", "path": "permit", "visible": "never" },
+          { "label": "Order Info", "path": "order.info", "visible": "never" },
+          { "label": "Order Maker", "path": "order.maker", "visible": "never" },
+          { "label": "Order Allowed Sender", "path": "order.allowedSender", "visible": "never" }
         ]
       }
     }
