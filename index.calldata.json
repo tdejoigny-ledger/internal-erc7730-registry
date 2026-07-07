@@ -344,6 +344,7 @@
   "eip155:1:0xed22a9861c6edd4f1292aeab1e44661d5f3fe65e": "registry/midas/calldata-MinterVault.json",
   "eip155:1:0xedd160febbd92e350d4d398fb636302fccd67c7e": "registry/safe/calldata-SafeL2-1.5.0.json",
   "eip155:1:0xef4461891dfb3ac8572ccf7c794664a8dd927945": "registry/walletconnect/calldata-wct.json",
+  "eip155:1:0xf0075b3cf8953d3e23b0ef65960913fd97eb5227": "registry/figment/calldata-figment-eth2-depositor.json",
   "eip155:1:0xf0c91bbae7f67c4e595d723ef5fb38b59f2008cf": "registry/midas/calldata-RedemptionVault.json",
   "eip155:1:0xf30cf4ed712d3734161fdaab5b1dbb49fd2d0e5c": "registry/yieldxyz/calldata-yieldxyz-pol-validator.json",
   "eip155:1:0xf4f042d90f0c0d3aba4a30caa6ac124b14a7e600": "registry/midas/calldata-RedemptionVault.json",
