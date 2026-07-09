@@ -1,6 +1,24 @@
 {
   "$schema": "../../specs/erc7730-v2.schema.json",
-  "context": { "contract": { "deployments": [{ "chainId": 1, "address": "0x4A6c312ec70E8747a587EE860a0353cd42Be0aE0" }] } },
+  "context": {
+    "contract": {
+      "deployments": [
+        { "chainId": 1, "address": "0x4A6c312ec70E8747a587EE860a0353cd42Be0aE0" },
+        { "chainId": 10, "address": "0x79481C87f24A3C4332442A2E9faaf675e5F141f0" },
+        { "chainId": 14, "address": "0x43F4861c9E7f584cFDc9B6BA3F0c2462895BDd67" },
+        { "chainId": 56, "address": "0x87c93660ECe6E68C6492EabBbBdbaafA102ae3a3" },
+        { "chainId": 130, "address": "0xC11329d19C2275c9E759867e879ECFcEeD7e30A0" },
+        { "chainId": 137, "address": "0xB261B51938A9767406ef83bbFbaAFE16691b7047" },
+        { "chainId": 143, "address": "0x725AB8CAd931BCb80Fdbf10955a806765cCe00e5" },
+        { "chainId": 480, "address": "0x30fa9A3cF56931ACEea42E28D35519a97D90aA67" },
+        { "chainId": 988, "address": "0x59b1F4376a81e39c466A0A218447E4D36f39A96b" },
+        { "chainId": 999, "address": "0xD7F48aDE56613E8605863832B7B8A1985B934aE4" },
+        { "chainId": 8453, "address": "0xb98c948CFA24072e58935BC004a8A7b376AE746A" },
+        { "chainId": 42161, "address": "0x9954aFB60BB5A222714c478ac86990F221788B88" },
+        { "chainId": 747474, "address": "0x916Aa175C36E845db45fF6DDB886AE437d403B61" }
+      ]
+    }
+  },
   "metadata": { "owner": "Morpho DAO", "info": { "url": "https://morpho.org" } },
   "display": {
     "formats": {
