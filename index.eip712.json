@@ -2449,6 +2449,16 @@
       }
     ]
   },
+  "eip155:1:0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb": {
+    "Authorization": [
+      {
+        "path": "registry/morpho/eip712-morpho-authorization.json",
+        "encodeTypeHashes": [
+          "0x81d0284fb0e2cde18d0553b06189d6f7613c96a01bb5b5e7828eade6a0dcac91"
+        ]
+      }
+    ]
+  },
   "eip155:1:0xc18360217d8f7ab5e7c516566761ea12ce7f9d72": {
     "Delegation": [
       {
@@ -4797,6 +4807,16 @@
         "path": "registry/permit/eip712-permit-base-toshi.json",
         "encodeTypeHashes": [
           "0x6e71edae12b1b97f4d1f60370fef10105fa2faae0126114a169c64845d6126c9"
+        ]
+      }
+    ]
+  },
+  "eip155:8453:0xbbbbbbbbbb9cc5e90e3b3af64bdaf62c37eeffcb": {
+    "Authorization": [
+      {
+        "path": "registry/morpho/eip712-morpho-authorization.json",
+        "encodeTypeHashes": [
+          "0x81d0284fb0e2cde18d0553b06189d6f7613c96a01bb5b5e7828eade6a0dcac91"
         ]
       }
     ]
