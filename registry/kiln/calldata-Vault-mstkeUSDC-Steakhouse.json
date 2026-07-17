@@ -1,0 +1,23 @@
+{
+  "$schema": "../../specs/erc7730-v2.schema.json",
+  "includes": "common-KilnVaults.json",
+  "context": {
+    "$id": "Kiln Vault mstkeUSDC",
+    "contract": {
+      "deployments": [
+        {
+          "chainId": 1,
+          "address": "0x334F5d28a71432f8fc21C7B2B6F5dBbcD8B32A7b"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "constants": {
+      "underlyingToken": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+      "underlyingTicker": "USDC",
+      "vaultTicker": "mstkeUSDC"
+    },
+    "contractName": "Kiln Vault mstkeUSDC"
+  }
+}

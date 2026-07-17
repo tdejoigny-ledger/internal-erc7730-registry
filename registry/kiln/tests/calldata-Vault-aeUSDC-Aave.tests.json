@@ -1,0 +1,26 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "deposit - chain 1",
+      "rawTx": "0x02f8b0010e840233cbe38406dc4841830673e994d2011d314acaa68e5401e7f5aec3be6d2c574dcf80b8446e553f650000000000000000000000000000000000000000000000000000000080ce3e40000000000000000000000000302dba037ba1dda2d2c97dbbf3d3b6e89ea9ec19c080a0b40a1cbf1b36e2ce5ce30a4c91056d79e837ad2c0364c7821470094a1d78f967a07f82a2de4cbb3b8a6e823febeae85e84f3fda67b75ff771f149c9811456ff86c",
+      "txHash": "0x232a40094773c3f39441a1d11e8689d8726a58ae04d0791de0d7d1c06e07b88b",
+      "expectedTexts": [
+        "Interaction with",
+        "Kiln",
+        "Deposit",
+        "aeUSDC"
+      ]
+    },
+    {
+      "description": "redeem - chain 1",
+      "rawTx": "0x02f8cf010d834a54d38405009e00830561f194d2011d314acaa68e5401e7f5aec3be6d2c574dcf80b864ba08765200000000000000000000000000000000000000000000000000000008eb3130e6000000000000000000000000b73095ccced9db72ffb987fac8c8f9846924f25a000000000000000000000000b73095ccced9db72ffb987fac8c8f9846924f25ac080a0bfcf2678fdf255a2d6ae0d7b39abafafeed6b93f95e7d01a60b3a4822e4e4f34a02f6c318274683a48708e24a9e4a9a617de4b0b616ebdf491d42b84ce667544ad",
+      "txHash": "0x63edf09915dc99c9af7f56c87c3df5e8fc9f498d1458ca2817943a981b979dbb",
+      "expectedTexts": [
+        "Interaction with",
+        "Kiln",
+        "Redeem"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "../../specs/erc7730-v2.schema.json",
+  "includes": "common-KilnVaults.json",
+  "context": {
+    "$id": "Kiln Vault aeUSDA",
+    "contract": {
+      "deployments": [
+        {
+          "chainId": 1,
+          "address": "0x4B20748c3Dd973f1456eccDE4FF84D54792dcD3e"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "constants": {
+      "underlyingToken": "0x0000206329b97DB379d5E1Bf586BbDB969C63274",
+      "underlyingTicker": "USDA",
+      "vaultTicker": "aeUSDA"
+    },
+    "contractName": "Kiln Vault aeUSDA"
+  }
+}

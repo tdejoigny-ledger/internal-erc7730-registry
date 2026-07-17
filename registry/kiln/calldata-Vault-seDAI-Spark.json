@@ -1,0 +1,23 @@
+{
+  "$schema": "../../specs/erc7730-v2.schema.json",
+  "includes": "common-KilnVaults.json",
+  "context": {
+    "$id": "Kiln Vault seDAI",
+    "contract": {
+      "deployments": [
+        {
+          "chainId": 1,
+          "address": "0xbd08C57f7448a5794bf4faeE067EC71AA64ef26D"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "constants": {
+      "underlyingToken": "0x6B175474E89094C44Da98b954EedeAC495271d0F",
+      "underlyingTicker": "DAI",
+      "vaultTicker": "seDAI"
+    },
+    "contractName": "Kiln Vault seDAI"
+  }
+}

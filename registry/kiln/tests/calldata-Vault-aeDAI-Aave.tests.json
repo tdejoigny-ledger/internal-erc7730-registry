@@ -1,0 +1,16 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "deposit - chain 1",
+      "rawTx": "0x02f8b10181b7841295464184652024f683066cc1944ef971774c77865ff8ec35f274474cb0ed9c48fa80b8446e553f650000000000000000000000000000000000000000000000060fb083038cf0400000000000000000000000000030471a7c9e3a8765e53a6257980ed3dcda586312c001a035b253d2982b8b5fd81ac854ac142dcd06c63754150121b18eceabc9d16ba7caa0540a8e550d852edc9b6f3819306986b9ec87ac2187d0b1fde02974050b623412",
+      "txHash": "0x8261f0a67748931af41d283b4b4c091c8652c1780ed46f95c15f96baddfa23c5",
+      "expectedTexts": [
+        "Interaction with",
+        "Kiln",
+        "Deposit",
+        "aeDAI"
+      ]
+    }
+  ]
+}

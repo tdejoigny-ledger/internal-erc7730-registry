@@ -1,0 +1,76 @@
+{
+  "$schema": "../../specs/erc7730-v2.schema.json",
+  "context": {
+    "$id": "Kiln LedgerLive V2",
+    "contract": {
+      "deployments": [
+        {
+          "chainId": 1,
+          "address": "0x5DB5235b5C7e247488784986e58019fFFd98FdA4"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "owner": "Kiln",
+    "info": {
+      "url": "https://kiln.fi/"
+    },
+    "contractName": "Kiln LedgerLive V2"
+  },
+  "display": {
+    "formats": {
+      "stake()": {
+        "intent": "Stake ETH (Kiln V2)",
+        "fields": [
+          {
+            "path": "@.value",
+            "label": "Amount to stake",
+            "format": "amount",
+            "visible": "always"
+          }
+        ]
+      },
+      "requestExit(uint256 amount)": {
+        "intent": "Request exit",
+        "fields": [
+          {
+            "path": "amount",
+            "label": "Shares to exit",
+            "format": "tokenAmount",
+            "params": {
+              "tokenPath": "@.to"
+            },
+            "visible": "always"
+          }
+        ]
+      },
+      "multiClaim(address[] exitQueues, uint256[][] ticketIds, uint32[][] casksIds)": {
+        "intent": "Claim exited stake",
+        "fields": [
+          {
+            "path": "exitQueues.[]",
+            "label": "Exit queue",
+            "format": "addressName",
+            "params": {
+              "types": [
+                "contract"
+              ]
+            },
+            "visible": "always"
+          },
+          {
+            "path": "ticketIds",
+            "label": "Ticket ids",
+            "visible": "never"
+          },
+          {
+            "path": "casksIds",
+            "label": "Cask ids",
+            "visible": "never"
+          }
+        ]
+      }
+    }
+  }
+}

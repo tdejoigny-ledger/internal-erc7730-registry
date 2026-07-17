@@ -1,0 +1,51 @@
+{
+  "$schema": "../../specs/erc7730-v2.schema.json",
+  "context": {
+    "$id": "Kiln Exit Queue Claim Helper",
+    "contract": {
+      "deployments": [
+        {
+          "chainId": 1,
+          "address": "0x8fe52F7FcE2eD6304aca6D45D5c993D5be06852A"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "owner": "Kiln",
+    "info": {
+      "url": "https://kiln.fi/"
+    },
+    "contractName": "Kiln Exit Queue Claim Helper"
+  },
+  "display": {
+    "formats": {
+      "multiClaim(address[] exitQueues, uint256[][] ticketIds, uint32[][] casksIds)": {
+        "intent": "Claim exited stake",
+        "fields": [
+          {
+            "path": "exitQueues.[]",
+            "label": "Exit queue",
+            "format": "addressName",
+            "params": {
+              "types": [
+                "contract"
+              ]
+            },
+            "visible": "always"
+          },
+          {
+            "path": "ticketIds",
+            "label": "Ticket ids",
+            "visible": "never"
+          },
+          {
+            "path": "casksIds",
+            "label": "Cask ids",
+            "visible": "never"
+          }
+        ]
+      }
+    }
+  }
+}

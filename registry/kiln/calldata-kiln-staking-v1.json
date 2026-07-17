@@ -1,0 +1,113 @@
+{
+  "$schema": "../../specs/erc7730-v2.schema.json",
+  "context": {
+    "$id": "Kiln Staking V1",
+    "contract": {
+      "deployments": [
+        {
+          "chainId": 1,
+          "address": "0x1e68238cE926DEC62b3FBC99AB06eB1D85CE0270"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "owner": "Kiln",
+    "info": {
+      "url": "https://kiln.fi/"
+    },
+    "contractName": "Kiln Staking V1"
+  },
+  "display": {
+    "formats": {
+      "deposit()": {
+        "intent": "Stake ETH (Kiln V1)",
+        "fields": [
+          {
+            "path": "@.value",
+            "label": "Amount to stake",
+            "format": "amount",
+            "visible": "always"
+          }
+        ]
+      },
+      "withdraw(bytes _publicKey)": {
+        "intent": "Withdraw rewards",
+        "fields": [
+          {
+            "path": "_publicKey",
+            "label": "Validator public key",
+            "format": "raw",
+            "visible": "always"
+          }
+        ]
+      },
+      "withdrawELFee(bytes _publicKey)": {
+        "intent": "Withdraw execution rewards",
+        "fields": [
+          {
+            "path": "_publicKey",
+            "label": "Validator public key",
+            "format": "raw",
+            "visible": "always"
+          }
+        ]
+      },
+      "withdrawCLFee(bytes _publicKey)": {
+        "intent": "Withdraw consensus rewards",
+        "fields": [
+          {
+            "path": "_publicKey",
+            "label": "Validator public key",
+            "format": "raw",
+            "visible": "always"
+          }
+        ]
+      },
+      "batchWithdraw(bytes _publicKeys)": {
+        "intent": "Withdraw rewards (batch)",
+        "fields": [
+          {
+            "path": "_publicKeys",
+            "label": "Validator public keys",
+            "format": "raw",
+            "visible": "always"
+          }
+        ]
+      },
+      "batchWithdrawELFee(bytes _publicKeys)": {
+        "intent": "Withdraw execution rewards (batch)",
+        "fields": [
+          {
+            "path": "_publicKeys",
+            "label": "Validator public keys",
+            "format": "raw",
+            "visible": "always"
+          }
+        ]
+      },
+      "batchWithdrawCLFee(bytes _publicKeys)": {
+        "intent": "Withdraw consensus rewards (batch)",
+        "fields": [
+          {
+            "path": "_publicKeys",
+            "label": "Validator public keys",
+            "format": "raw",
+            "visible": "always"
+          }
+        ]
+      },
+      "requestValidatorsExit(bytes _publicKeys)": {
+        "intent": "Request validators exit",
+        "fields": [
+          {
+            "path": "_publicKeys",
+            "label": "Validator public keys",
+            "format": "raw",
+            "visible": "always"
+          }
+        ]
+      }
+    }
+  }
+}

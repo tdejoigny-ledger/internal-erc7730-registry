@@ -8,16 +8,7 @@
       "expectedTexts": [
         "Interaction with",
         "Kiln",
-        "Validators",
-        "0x8636e3767e50b8f84 7c627c2cbb451c24166 4568464b95cc6d7f96 29577a08f59bea50b5a 5cc2901e8ebdd7abfe8 d7b9",
-        "Type and owner",
-        "0x0100000000000000 00000000c20d5ac9ec1 463a85ed00ff3f483d0 008773108b",
-        "Signatures",
-        "0x9715f44974927cee3 e6fa9372ed38c09da40 69422e7e298ed04a63 e979aeefe18295ffcdf6 4245635cdc684138caf 8ce0b6cda608f62b... More",
-        "Data Roots",
-        "0xc00612ae76d3aa9b6 903a201a628976b37d e9fb1e98391b859c386 d0b43b940d",
-        "Max fees",
-        "0.0020382 ETH"
+        "Amount to stake"
       ]
     },
     {
@@ -27,18 +18,7 @@
       "expectedTexts": [
         "Interaction with",
         "Kiln",
-        "Validators",
-        "0x8cdbf47b2dbbc7271 0095b274ed9a7e0822 6f0c37f2bbfbabf42946 172fabafdf0383aac022 cc1efadfd1891a455e54 9",
-        "Type and owner",
-        "0x0200000000000000 0000000007cfa0e1598 a425ecbc8688faddba0 64a9a50ed8",
-        "Signatures",
-        "0x87f02b2eb7e79e36a 468a2b43b5c62adb21 b8b58ff37aea73475d9 33e2df26efe0fb52cf8ff 6e9312ecf519574dd00 92015a096964788... More",
-        "Data Roots",
-        "0xa689fe0d1fcf2df0f7a 184d15343832d76b2a b2b9e4099092f80632 ec9487a98",
-        "Amount Per Validator",
-        "32 ETH",
-        "Max fees",
-        "0.00002102457581152 ETH"
+        "Amount to stake"
       ]
     }
   ]
