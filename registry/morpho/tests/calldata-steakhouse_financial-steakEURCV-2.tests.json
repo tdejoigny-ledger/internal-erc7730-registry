@@ -1,0 +1,18 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "Deposit EURCV - chain 1",
+      "rawTx": "0x02f8710180843b9aca008504a817c80083030d4094beef07e929f84466a591de130e4154667214f49180b8446e553f650000000000000000000000000000000000000000000000056bc75e2d631000000000000000000000000000000000000000000000000000000000000000000001c0800101",
+      "expectedTexts": [
+        "Interaction with",
+        "Steakhouse Financial",
+        "Deposit asset",
+        "Share ticker",
+        "steakEURCV",
+        "Send shares to",
+        "0x0000000000000000 000000000000000000 000001"
+      ]
+    }
+  ]
+}

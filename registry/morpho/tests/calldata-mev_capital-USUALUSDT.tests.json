@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "Deposit USDT - chain 1",
+      "rawTx": "0x02f8710180843b9aca008504a817c80083030d4094225c119ffaf1caddcfcdb493283edf4b816bf77380b8446e553f650000000000000000000000000000000000000000000000000000000005f5e1000000000000000000000000000000000000000000000000000000000000000001c0800101",
+      "expectedTexts": [
+        "Interaction with",
+        "MEV Capital",
+        "Deposit asset",
+        "100 USDT",
+        "Share ticker",
+        "USUALUSDT",
+        "Send shares to",
+        "0x0000000000000000 000000000000000000 000001"
+      ]
+    }
+  ]
+}

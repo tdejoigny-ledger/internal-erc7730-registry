@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "Deposit USDC - chain 8453",
+      "rawTx": "0x02f87382210580843b9aca008504a817c80083030d409412afdefb2237a5963e7bab3e2d46ad0eee70406e80b8446e553f650000000000000000000000000000000000000000000000000000000005f5e1000000000000000000000000000000000000000000000000000000000000000001c0800101",
+      "expectedTexts": [
+        "Interaction with",
+        "RE7 Labs",
+        "Deposit asset",
+        "100 USDC",
+        "Share ticker",
+        "Re7USDC",
+        "Send shares to",
+        "0x0000000000000000 000000000000000000 000001"
+      ]
+    }
+  ]
+}

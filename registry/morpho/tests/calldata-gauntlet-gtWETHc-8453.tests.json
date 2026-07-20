@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "Deposit WETH - chain 8453",
+      "rawTx": "0x02f87382210580843b9aca008504a817c80083030d40946b13c060f13af1fdb319f52315bbbf3fb1d8884480b8446e553f650000000000000000000000000000000000000000000000056bc75e2d631000000000000000000000000000000000000000000000000000000000000000000001c0800101",
+      "expectedTexts": [
+        "Interaction with",
+        "Gauntlet",
+        "Deposit asset",
+        "100 WETH",
+        "Share ticker",
+        "gtWETHc",
+        "Send shares to",
+        "0x0000000000000000 000000000000000000 000001"
+      ]
+    }
+  ]
+}

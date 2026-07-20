@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "Deposit wUSDM - chain 1",
+      "rawTx": "0x02f8710180843b9aca008504a817c80083030d4094beef033b4520267c5acfcb45414117b633fcb3dd80b8446e553f650000000000000000000000000000000000000000000000056bc75e2d631000000000000000000000000000000000000000000000000000000000000000000001c0800101",
+      "expectedTexts": [
+        "Interaction with",
+        "Steakhouse Financial",
+        "Deposit asset",
+        "100 wUSDM",
+        "Share ticker",
+        "steakUSDM",
+        "Send shares to",
+        "0x0000000000000000 000000000000000000 000001"
+      ]
+    }
+  ]
+}

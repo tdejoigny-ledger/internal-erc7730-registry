@@ -1,0 +1,19 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "Deposit EURC - chain 8453",
+      "rawTx": "0x02f87382210580843b9aca008504a817c80083030d40941c155be6bc51f2c37d472d4c2eba7a637806e12280b8446e553f650000000000000000000000000000000000000000000000000000000005f5e1000000000000000000000000000000000000000000000000000000000000000001c0800101",
+      "expectedTexts": [
+        "Interaction with",
+        "Gauntlet",
+        "Deposit asset",
+        "100 EURC",
+        "Share ticker",
+        "gtEURCc",
+        "Send shares to",
+        "0x0000000000000000 000000000000000000 000001"
+      ]
+    }
+  ]
+}
