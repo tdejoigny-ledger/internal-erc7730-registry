@@ -54,6 +54,7 @@
   "eip155:11155111:0xfff9976782d46cc05630d1f6ebab18b2324d6b14": "registry/weth/calldata-weth.json",
   "eip155:1116:0x0000000000000000000000000000000000001010": "registry/corestake/calldata-stakehub.json",
   "eip155:1116:0x0000000000000000000000000000000000001011": "registry/corestake/calldata-coreagent.json",
+  "eip155:1116:0x0000000000000000000000000000000000001014": "registry/corestake/calldata-bitcoinstake.json",
   "eip155:1116:0xf5fa1728babc3f8d2a617397fac2696c958c3409": "registry/corestake/calldata-corestake.json",
   "eip155:122:0x1231deb6f5749ef6ce6943a275a1d3e7486f4eae": "registry/lifi/calldata-LIFIDiamond.json",
   "eip155:1284:0x1231deb6f5749ef6ce6943a275a1d3e7486f4eae": "registry/lifi/calldata-LIFIDiamond.json",
