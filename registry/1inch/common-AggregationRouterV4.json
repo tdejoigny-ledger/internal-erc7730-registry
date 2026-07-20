@@ -249,6 +249,12 @@
         "intent": "Fill RFQ order",
         "fields": [
           {
+            "path": "@.value",
+            "label": "ETH sent",
+            "format": "amount",
+            "visible": "always"
+          },
+          {
             "path": "order.makingAmount",
             "label": "Order making amount",
             "format": "tokenAmount",
