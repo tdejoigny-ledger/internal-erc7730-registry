@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "Mint - OS-vault (chain 146)",
+      "rawTx": "0x02f892819280843b9aca008504a817c800830493e094a3c0eca00d2b76b4d1f170b0ab3fdea16c18018680b864156e29f6000000000000000000000000039e2fb66102314ce7b64ce5ce3e5183bc94ad380000000000000000000000000000000000000000000000056bc75e2d631000000000000000000000000000000000000000000000000000056bc75e2d63100000c0800101",
+      "expectedTexts": [
+        "Origin Protocol",
+        "Mint",
+        "100 wS"
+      ]
+    }
+  ]
+}

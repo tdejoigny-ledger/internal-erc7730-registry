@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "Wrap - wOUSD (chain 1)",
+      "rawTx": "0x02f8710180843b9aca008504a817c800830493e094d2af830e8cbdfed6cc11bab697bb25496ed6fa6280b8446e553f650000000000000000000000000000000000000000000000056bc75e2d631000000000000000000000000000000000000000000000000000000000000000000001c0800101",
+      "expectedTexts": [
+        "Origin Protocol",
+        "Wrap",
+        "100 OUSD"
+      ]
+    }
+  ]
+}

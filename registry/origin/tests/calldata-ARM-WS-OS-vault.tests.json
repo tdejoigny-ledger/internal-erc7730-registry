@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "Deposit - ARM-WS-OS-vault (chain 146)",
+      "rawTx": "0x02f851819280843b9aca008504a817c800830493e0942f872623d1e1af5835b08b0e49aad2d81d649d3080a4b6b55f250000000000000000000000000000000000000000000000056bc75e2d63100000c0800101",
+      "expectedTexts": [
+        "Origin Protocol",
+        "Deposit",
+        "100 wS"
+      ]
+    }
+  ]
+}
