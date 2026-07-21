@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "Wrap - wsuperOETHb (chain 8453)",
+      "rawTx": "0x02f87382210580843b9aca008504a817c800830493e0947fcd174e80f264448ebee8c88a7c4476aaf58ea680b8446e553f650000000000000000000000000000000000000000000000000de0b6b3a76400000000000000000000000000000000000000000000000000000000000000000001c0800101",
+      "expectedTexts": [
+        "Origin Protocol",
+        "Wrap",
+        "1 superOETHb"
+      ]
+    }
+  ]
+}

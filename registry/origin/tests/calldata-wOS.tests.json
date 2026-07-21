@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "Wrap - wOS (chain 146)",
+      "rawTx": "0x02f872819280843b9aca008504a817c800830493e0949f0df7799f6fdad409300080cff680f5a23df4b180b8446e553f650000000000000000000000000000000000000000000000056bc75e2d631000000000000000000000000000000000000000000000000000000000000000000001c0800101",
+      "expectedTexts": [
+        "Origin Protocol",
+        "Wrap",
+        "100 OS"
+      ]
+    }
+  ]
+}

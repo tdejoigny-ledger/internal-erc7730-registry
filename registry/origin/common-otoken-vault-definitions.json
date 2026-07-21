@@ -1,0 +1,182 @@
+{
+  "$schema": "../../specs/erc7730-v2.schema.json",
+  "context": {
+    "contract": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_requestId",
+              "type": "uint256"
+            }
+          ],
+          "name": "claimWithdrawal",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "amount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "_requestIds",
+              "type": "uint256[]"
+            }
+          ],
+          "name": "claimWithdrawals",
+          "outputs": [
+            {
+              "internalType": "uint256[]",
+              "name": "amounts",
+              "type": "uint256[]"
+            },
+            {
+              "internalType": "uint256",
+              "name": "totalAmount",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "_asset",
+              "type": "address"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_amount",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "_minimumOusdAmount",
+              "type": "uint256"
+            }
+          ],
+          "name": "mint",
+          "outputs": [],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        },
+        {
+          "inputs": [
+            {
+              "internalType": "uint256",
+              "name": "_amount",
+              "type": "uint256"
+            }
+          ],
+          "name": "requestWithdrawal",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "requestId",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "queued",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "nonpayable",
+          "type": "function"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "owner": "Origin Protocol",
+    "info": {
+      "url": "https://www.originprotocol.com"
+    },
+    "constants": {
+      "underlyingToken": "0x0000000000000000000000000000000000000000"
+    }
+  },
+  "display": {
+    "formats": {
+      "claimWithdrawal(uint256 _requestId)": {
+        "intent": "Claim withdrawal request",
+        "fields": [
+          {
+            "label": "Request Id",
+            "format": "raw",
+            "path": "_requestId",
+            "visible": "always"
+          }
+        ]
+      },
+      "claimWithdrawals(uint256[] _requestIds)": {
+        "intent": "Claim withdrawal requests",
+        "fields": [
+          {
+            "label": "Request Ids",
+            "format": "raw",
+            "path": "_requestIds.[]",
+            "visible": "always"
+          }
+        ]
+      },
+      "mint(address _asset, uint256 _amount, uint256 _minimumOusdAmount)": {
+        "intent": "Mint",
+        "fields": [
+          {
+            "label": "Asset",
+            "format": "addressName",
+            "path": "_asset",
+            "params": {
+              "types": [
+                "token"
+              ]
+            },
+            "visible": "always"
+          },
+          {
+            "label": "Amount",
+            "format": "tokenAmount",
+            "path": "_amount",
+            "params": {
+              "tokenPath": "_asset"
+            },
+            "visible": "always"
+          },
+          {
+            "label": "Minimum Received",
+            "format": "tokenAmount",
+            "path": "_minimumOusdAmount",
+            "params": {
+              "token": "$.metadata.constants.underlyingToken"
+            },
+            "visible": "always"
+          }
+        ]
+      },
+      "requestWithdrawal(uint256 _amount)": {
+        "intent": "Request withdrawal",
+        "fields": [
+          {
+            "label": "Amount",
+            "format": "tokenAmount",
+            "path": "_amount",
+            "visible": "always",
+            "params": {
+              "token": "$.metadata.constants.underlyingToken"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "$schema": "../../specs/erc7730-v2.schema.json",
+  "context": {
+    "contract": {
+      "abi": [
+        {
+          "inputs": [
+            {
+              "internalType": "address",
+              "name": "arm",
+              "type": "address"
+            }
+          ],
+          "name": "deposit",
+          "outputs": [
+            {
+              "internalType": "uint256",
+              "name": "shares",
+              "type": "uint256"
+            }
+          ],
+          "stateMutability": "payable",
+          "type": "function"
+        }
+      ]
+    }
+  },
+  "metadata": {
+    "owner": "Origin Protocol",
+    "info": {
+      "url": "https://www.originprotocol.com"
+    }
+  },
+  "display": {
+    "formats": {
+      "deposit(address arm)": {
+        "intent": "Deposit",
+        "fields": [
+          {
+            "path": "arm",
+            "label": "ARM contract",
+            "format": "addressName",
+            "params": {
+              "types": [
+                "contract"
+              ],
+              "sources": [
+                "local",
+                "ens"
+              ]
+            },
+            "visible": "always"
+          },
+          {
+            "label": "Amount",
+            "format": "amount",
+            "path": "@.value",
+            "visible": "always"
+          }
+        ]
+      }
+    }
+  }
+}

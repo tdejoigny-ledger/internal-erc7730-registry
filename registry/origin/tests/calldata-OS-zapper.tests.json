@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "Deposit - OS-zapper (chain 146)",
+      "rawTx": "0x02f83a819280843b9aca008504a817c800830493e094e25a2b256ffb3ad73678d5e80de8d2f6022fab2189056bc75e2d6310000084d0e30db0c0800101",
+      "expectedTexts": [
+        "Origin Protocol",
+        "Deposit",
+        "100 S"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "Deposit - ARM-WETH-stETH-vault (chain 1)",
+      "rawTx": "0x02f8500180843b9aca008504a817c800830493e09485b78aca6deae198fbf201c82daf6ca21942acc680a4b6b55f250000000000000000000000000000000000000000000000000de0b6b3a7640000c0800101",
+      "expectedTexts": [
+        "Origin Protocol",
+        "Deposit",
+        "1 WETH"
+      ]
+    }
+  ]
+}

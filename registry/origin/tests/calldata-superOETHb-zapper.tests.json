@@ -1,0 +1,14 @@
+{
+  "$schema": "../../../specs/erc7730-tests.schema.json",
+  "tests": [
+    {
+      "description": "Deposit - superOETHb-zapper (chain 8453)",
+      "rawTx": "0x02f83a82210580843b9aca008504a817c800830493e0943b56c09543d3068f8488ed34e6f383c3854d2bc1880de0b6b3a764000084d0e30db0c0800101",
+      "expectedTexts": [
+        "Origin Protocol",
+        "Deposit",
+        "1 ETH"
+      ]
+    }
+  ]
+}
